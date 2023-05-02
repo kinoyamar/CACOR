@@ -1,0 +1,20 @@
+gs://quickdraw_dataset/sketchrnn/drill.npz
+gs://quickdraw_dataset/sketchrnn/telephone.npz
+gs://quickdraw_dataset/sketchrnn/airplane.npz
+gs://quickdraw_dataset/sketchrnn/dishwasher.npz
+gs://quickdraw_dataset/sketchrnn/chair.npz
+gs://quickdraw_dataset/sketchrnn/grass.npz
+gs://quickdraw_dataset/sketchrnn/rhinoceros.npz
+gs://quickdraw_dataset/sketchrnn/octopus.npz
+gs://quickdraw_dataset/sketchrnn/cloud.npz
+gs://quickdraw_dataset/sketchrnn/bicycle.npz
+gs://quickdraw_dataset/sketchrnn/swan.npz
+gs://quickdraw_dataset/sketchrnn/picture frame.npz
+gs://quickdraw_dataset/sketchrnn/shorts.npz
+gs://quickdraw_dataset/sketchrnn/flying saucer.npz
+gs://quickdraw_dataset/sketchrnn/basketball.npz
+gs://quickdraw_dataset/sketchrnn/harp.npz
+gs://quickdraw_dataset/sketchrnn/beard.npz
+gs://quickdraw_dataset/sketchrnn/binoculars.npz
+gs://quickdraw_dataset/sketchrnn/tiger.npz
+gs://quickdraw_dataset/sketchrnn/book.npz

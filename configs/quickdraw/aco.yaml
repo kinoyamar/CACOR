@@ -1,0 +1,55 @@
+exp_name: Quick Draw
+run_name: qd_aco
+method: aco
+
+mlruns_dir: results/mlruns
+result_folder: results/quickdraw
+dataroot: ~/dataset/quickdraw
+cuda: true
+num_workers: 8
+cpus_per_job: 3
+
+# These parameters can be overwritten by run/run_experiment.py
+rehe_patterns: 40 # Number of rehearsal patterns per class in the memory. This controls all type of rehearsal.
+rehe_patterns_val: 10 # Number of rehearsal patterns per class in the memory. This controls all type of rehearsal.
+
+# TASK CONFIGURATION
+exp_type: quickdraw
+n_tasks: 10
+output_size: 30
+input_size: 3
+max_label_value: 30 # if real value is greater, a % op will be applied on it.
+classes_per_task: 2
+
+# Model Hyperparameters
+models: aco_lstm
+epochs: 10
+end_task_epochs: 1
+hidden_size_rnn: 512
+layers_rnn: 2
+orthogonal: false # Use orthogonal recurrent matrixes
+expand_output: 0 #Expand output layer dynamically
+
+# OPTIMIZER
+weight_decay: 0
+learning_rate: 1e-4
+batch_size: 128
+clip_grad: 5
+use_sgd: False
+
+# EXTRAS
+not_test: false
+not_intermediate_test: false
+monitor: true # monitor metrics
+save: true # save models
+
+# Replay Memory
+patterns_per_class_per_batch: 10 # can be -1 (disable this option, not rehearsal), 0 (add a minibatch equally split among classes) or >0 (specify patterns per class per minibatch)
+patterns_per_class_per_batch_val: 5 # can be -1 (disable this option, not rehearsal), 0 (add a minibatch equally split among classes) or >0 (specify patterns per class per minibatch)
+
+# ACO Parameters
+aco_init_value: 1.0
+num_ant: 262144
+aco_evaporation_rate: 0.05
+aco_reward_coef: 1e-5
+aco_update_rule: 1
